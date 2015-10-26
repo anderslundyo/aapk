@@ -1,0 +1,159 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+	overflow: hidden;
+}
+
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+
+}
+#headerbg { position:absolute; max-width:100%; width:3000px; z-index:-1; height:200px;}
+a:hover { opacity:0.5; }
+#menuheader { text-align:right; padding: 140px 10% 0 0;}
+#menupunkt { margin-left:-25px;;}
+#menupunktforside { padding-right:20px;}
+.tutorials { padding-left:10px;}
+#logo { width:140px; float:left; margin-left:10%; margin-top:10px; z-index:2;; }
+#icons { position:relative; float:right; margin: 2% 2% 0 0;}
+.tutorials { opacity:0.6;}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {
+}
+#wrapper { background-color:#babdc2; z-index:-10; height:1200px; width:3000px; max-width:100%; position:absolute;}
+.billede { float:left; }
+
+/*artikler*/
+#artikler { display:inline-block;
+			position:absolute;
+			background: rgba(255,255,255, 0);
+            filter:alpha(opacity=0); /* For IE8 and earlier */;
+			float:left; 
+			margin-left:10%; 
+			margin-top:2%;
+			z-index:6;
+}
+	#artikler p { width:300px; font-family: 'Montserrat', sans-serif; font-weight:50; font-size:1.1em; margin-left:5px;}
+	#artikler h2 { font-family: 'Montserrat', sans-serif; font-size:1.8em; padding-bottom:10px; }
+	#artikler a:hover { opacity:0.7;}
+#article1 {
+	float:left;
+	display:inline;
+	max-width:30%;
+	padding:1em;
+	margin:0 0 0 10px;}
+#article2 {
+	display:inline;
+	float:left;
+	max-width:30%;
+	padding:1em;
+	margin:0 0 0 10px;}
+#article3 {
+	float:left;
+	max-width:30%;
+	padding:1em;
+	margin:0 0 0 10px;}
+#article4 {
+	float:left;
+	max-width:30%;
+	padding:1em;
+	margin:0 0 0 10px;}
+#article5 {
+	float:left;
+	max-width:30%;
+	padding:1em;
+	margin:0 0 0 10px;}
+#article6 {
+	float:left;
+	max-width:30%;
+	padding:1em;
+	margin:0 0 0 10px;}
+
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	position:absolute;
+	bottom:0;
+	left:0;
+	margin-bottom:-95px;
+	z-index:-5;
+	
+}
+
+#action:hover { opacity: 0.9}
+#action {z-index:5; margin: 8% 8% 0 0; float:right; transform:rotate(35deg)}
+#actionknap { width:50%; margin-left:50%;}
+#footer { max-width:100%; width:3000px; height:10%; }
+
+
+
+/* Media Queries */
+@media only screen and (max-width:1670px){
+	#action {z-index:5; margin: 8% 1% 0 0; float:right; transform:rotate(35deg)}
+}
+@media only screen and (max-width:1522px){
+	#action {z-index:5; margin: 8% 0% 0 0; float:right; transform:rotate(35deg)}
+}
+@media only screen and (max-width:1466px){
+	#artikler { margin-left:0}
+	
+#action {z-index:5; margin: 2% 0 0 1%; float:right;}
+#actionknap { width:50%; margin-left:50%;}
+}
